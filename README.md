@@ -8,8 +8,8 @@
 		mkdir -p /app/docker/tools/nginx/master/logs 
 	进入master目录，创建数据卷：
 		docker run -d --name nginx_master_volumes -v $(pwd)/conf:/etc/nginx -v $(pwd)/html:/usr/share/nginx/html -v $(pwd)/logs:/var/log/nginx alpine 
-	运行容器： 
-	docker run -d --name nginx_master -p 8888:80 -p 8443:443 --volumes-from nginx_master_volumes dingwenxiang0/nginx:1.13.9-alpine 
+	运行容器：
+		docker run -d --name nginx_master -p 8888:80 -p 8443:443 --volumes-from nginx_master_volumes dingwenxiang0/nginx:1.13.9-alpine 
 	
 
 
