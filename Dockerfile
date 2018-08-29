@@ -1,4 +1,4 @@
-FROM nginx:1.13.9-alpine
+FROM nginx:1.15.2-alpine
 
 MAINTAINER saruman 624380857@qq.com
 
